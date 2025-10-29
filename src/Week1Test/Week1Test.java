@@ -46,6 +46,10 @@ public class Week1Test {
             reverseString = reverseString + palindrome.charAt(i);
         }
         System.out.println(reverseString);
+        if(reverseString.equalsIgnoreCase(palindrome)){
+            System.out.println("The given String is a palindrome");
+        }
+        else System.out.println("The given String is not a palindrome");
 
         // Reverse of Number
 
