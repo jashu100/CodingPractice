@@ -31,9 +31,15 @@ public class CustomerAccount {
         System.out.println("Enter amount to be withdraw");
         Scanner sc = new Scanner(System.in);
         int wdamount = sc.nextInt();
-        balance = balance - wdamount;
-        System.out.println("Money withdrawn from account " + accnumber +
-                " remaining account balance is: " + balance);
+        if(wdamount <= balance) {
+            balance = balance - wdamount;
+            System.out.println("Money withdrawn from account " + accnumber +
+                    " remaining account balance is: " + balance);
+        }
+        else {
+            System.out.println("Money cannot be withdrawn from account " + accnumber +
+                    " your account balance is: " + balance);
+        }
         return balance;
     }
 
@@ -47,8 +53,4 @@ public class CustomerAccount {
                 " remaining account balance is :" + balance);
         return balance;
     }
-
-
 }
-
-
