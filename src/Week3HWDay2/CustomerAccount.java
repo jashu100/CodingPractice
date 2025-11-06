@@ -1,4 +1,4 @@
-package Week3HWDay1;
+package Week3HWDay2;
 
 import java.util.Scanner;
 
