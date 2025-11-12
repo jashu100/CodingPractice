@@ -7,8 +7,8 @@ public class AccountOperations {
         BankAccount bankAccount1 = new BankAccount(800, "A");
         BankAccount bankAccount2 = new BankAccount(900, "B");
 
-       bankAccount1.transferToBeneficiary(bankAccount2, 500);
-       System.out.println(bankAccount2.getBalance());
+       bankAccount1.transferToBeneficiary(bankAccount2, 900);
+       System.out.println("Present beneficiary balance is : " + bankAccount2.getBalance());
 
     }
 }
